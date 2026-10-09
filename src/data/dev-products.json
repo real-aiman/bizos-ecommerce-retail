@@ -1,0 +1,128 @@
+{
+  "lastId": 0,
+  "pageNo": 0,
+  "pageSize": 10,
+  "totalCount": 10,
+  "data": [
+    {
+      "id": 28860,
+      "name": "MacBook Neo",
+      "slug": "macbook-neo",
+      "regularPrice": 599,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/28860/5322ba11-0d86-4474-9cfa-67af01912e12.png",
+      "departmentId": 2134,
+      "departmentName": "Electronics",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 28858,
+      "name": "MacBook Pro M5",
+      "slug": "macbook-pro-m5",
+      "regularPrice": 1699,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/28858/6c591def-b58f-4d0d-a129-674484bfc18a.jpg",
+      "departmentId": 2134,
+      "departmentName": "Electronics",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 28857,
+      "name": "Macbook Air M5",
+      "slug": "macbook-air-m5",
+      "regularPrice": 1099,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/28857/4a43a7ae-739c-41c5-a5d4-e182310659f2.png",
+      "departmentId": 2134,
+      "departmentName": "Electronics",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 21821,
+      "name": "iPhone 17 Pro",
+      "slug": "iphone-17-pro",
+      "regularPrice": 1099,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/21821/e55ce57e-e1e3-4d2f-bb5c-6e3e3ea4111b.jpg",
+      "departmentId": 2136,
+      "departmentName": "Mobility",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 15840,
+      "name": "iPhone 17",
+      "slug": "iphone-17",
+      "regularPrice": 799,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/15840/fb0735ef-d157-4960-b972-f004fa6872db.jpg",
+      "departmentId": 2134,
+      "departmentName": "Electronics",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 15839,
+      "name": "iPhone 17 Pro Max",
+      "slug": "iphone-17-pro-max",
+      "regularPrice": 1199,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/15839/9932d8e9-6a85-4e16-88b3-781773b7fe2d.jpg",
+      "departmentId": 2134,
+      "departmentName": "Electronics",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 15838,
+      "name": "iPhone 17 Pro",
+      "slug": "iphone-17-pro-2",
+      "regularPrice": 1049,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/15838/996f3351-c7c0-4a28-9980-00a1a1236268.jpg",
+      "departmentId": 2134,
+      "departmentName": "Electronics",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 15834,
+      "name": "OMIGO",
+      "slug": "omigo",
+      "regularPrice": 500,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/15834/1773dfca-db8f-4bbf-81c6-544d2c9206e1.jpeg",
+      "departmentId": 2136,
+      "departmentName": "Mobility",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 15833,
+      "name": "OKG",
+      "slug": "okg",
+      "regularPrice": 1000,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/15833/def30f0d-d648-4ed4-8f09-5a813df0b554.jpeg",
+      "departmentId": 2136,
+      "departmentName": "Mobility",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    },
+    {
+      "id": 15832,
+      "name": "OVEGA",
+      "slug": "ovega",
+      "regularPrice": 650,
+      "productImageUrl": "https://erpmedia.biz-os.com/media/1034/product/15832/e99a354f-f71c-4bb2-a4ae-563a56b3c317.jpeg",
+      "departmentId": 2136,
+      "departmentName": "Mobility",
+      "productMeasureUnitId": 2074,
+      "productMeasureUnitName": "Unit",
+      "totalCount": 10
+    }
+  ]
+}
