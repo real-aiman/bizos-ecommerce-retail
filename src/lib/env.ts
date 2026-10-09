@@ -5,10 +5,13 @@ function requiredInProduction(name: string, value: string | undefined, skip: boo
   return value ?? "";
 }
 
-const devFallback = process.env.BIZOS_DEV_FALLBACK === "true";
+// Fallback to the bundled dev-products.json is ON by default, so the build and the site never
+// crash when the BizOS API is unset, unreachable or returns an error (404/500).
+// Set BIZOS_DEV_FALLBACK=false only if you want hard failures instead.
+const devFallback = process.env.BIZOS_DEV_FALLBACK !== "false";
 
 export const env = {
-  // BIZOS_API_URL is required in production unless BIZOS_DEV_FALLBACK=true.
+  // BIZOS_API_URL is only required in production when BIZOS_DEV_FALLBACK=false.
   bizosApiUrl: requiredInProduction("BIZOS_API_URL", process.env.BIZOS_API_URL, devFallback),
   bizosProductsPath: process.env.BIZOS_PRODUCTS_PATH || "/products",
   /** Optional GET endpoint that lists orders, used only by the admin dashboard. */

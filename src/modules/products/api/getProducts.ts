@@ -40,9 +40,14 @@ function emptyPage(page: number): ProductListResponse {
   return { lastId: 0, pageNo: page - 1, pageSize: 0, totalCount: (devProducts as ProductListResponse).totalCount, data: [] };
 }
 
+function fallback(page: number, reason: string): ProductListResponse {
+  if (page === 1) console.warn(`[BizOS] Using bundled dev products: ${reason}`);
+  return page > 1 ? emptyPage(page) : (devProducts as ProductListResponse);
+}
+
 export async function getProducts(page = 1, pageSize = 10): Promise<ProductListResponse> {
   if (!env.bizosApiUrl) {
-    if (env.devFallback) return page > 1 ? emptyPage(page) : (devProducts as ProductListResponse);
+    if (env.devFallback) return fallback(page, "BIZOS_API_URL is not set.");
     throw new Error("BIZOS_API_URL is not configured.");
   }
 
@@ -52,6 +57,7 @@ export async function getProducts(page = 1, pageSize = 10): Promise<ProductListR
   try {
     const response = await fetch(buildUrl(page, pageSize), {
       headers,
+      signal: AbortSignal.timeout(10_000),
       next: { revalidate: 60, tags: ["products"] }
     });
 
@@ -62,7 +68,7 @@ export async function getProducts(page = 1, pageSize = 10): Promise<ProductListR
     return normalize(await response.json());
   } catch (error) {
     if (env.devFallback) {
-      return page > 1 ? emptyPage(page) : (devProducts as ProductListResponse);
+      return fallback(page, error instanceof Error ? error.message : "request failed.");
     }
     throw error;
   }
